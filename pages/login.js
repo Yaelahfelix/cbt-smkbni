@@ -1,4 +1,5 @@
 import { useRef, useState } from "react";
+import YellowBtn from "../components/Button/YellowBtn";
 
 export default function Page() {
   const [loginGuru, setLoginGuru] = useState(false);
@@ -33,13 +34,14 @@ export default function Page() {
               name="password"
               className="w-full block border-b-2 border-pallete-yellow focus:outline-none focus:border-pallete-red transition-colors"
             />
-            {errorCode == 1 &&
-              <p className="absolute text-sm italic text-pallete-red">Maaf ID/Password kamu salah!</p>}
+            {errorCode == 1 && (
+              <p className="absolute text-sm italic text-pallete-red">
+                Maaf ID/Password kamu salah!
+              </p>
+            )}
           </div>
           <div className="flex w-full items-center justify-between flex-row-reverse">
-            <button className="bg-pallete-yellow hover:bg-pallete-red transition-colors font-semibold py-2 px-7 tracking-wide rounded-md">
-              Login
-            </button>
+            <YellowBtn>Login</YellowBtn>
             <div className="flex justify-center items-center gap-2">
               <input
                 id="loginGuru"

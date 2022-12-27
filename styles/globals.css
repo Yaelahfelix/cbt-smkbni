@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .tableStyle{
+        @apply py-3 px-2 w-12 bg-white border border-pallete-purple
+    }
+    .tableHeader{
+        @apply !bg-pallete-purple text-white
+    }
+    .stickyTable{
+        @apply sticky left-0 overflow-hidden
+    }
+}
