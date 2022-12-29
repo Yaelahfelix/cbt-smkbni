@@ -6,9 +6,12 @@ import Soal from "./Soal";
 function Ujian({ fullScreen }) {
   return (
     <>
-      <FullScreen handle={fullScreen} className="bg-slate-100">
+      <FullScreen handle={fullScreen} className="bg-slate-100 overflow-scroll">
         {fullScreen.active && (
-          <section>
+          <section
+            onCopy={(e) => e.preventDefault()}
+            style={{ userSelect: "none" }}
+          >
             <UjianNav />
             <section className=" mx-5 my-16 flex flex-col gap-5">
               <Soal />

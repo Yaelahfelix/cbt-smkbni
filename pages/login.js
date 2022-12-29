@@ -9,7 +9,7 @@ export default function Page() {
   return (
     <div className="font-satoshi grid items-center h-screen bg-pallete-light-yellow p-5">
       <section className="flex justify-center">
-        <section className="w-full md:w-8/12 lg:w-[500px] p-10 sm:p-20 bg-white shadow-lg rounded-lg flex items-center flex-col gap-5">
+        <section className="w-full md:w-8/12 lg:w-[500px] py-10 px-8 sm:p-20 bg-white shadow-lg rounded-lg flex items-center flex-col gap-5">
           <h1 className="text-center font-bold text-5xl text-pallete-purple">
             CBT
             <br />
@@ -41,10 +41,10 @@ export default function Page() {
             )}
           </div>
           <div className="flex w-full items-center justify-between flex-row-reverse">
-            <YellowBtn>Login</YellowBtn>
+            <button className="btn btn-warning">Login</button>
 
             <div className="form-control">
-              <label className="cursor-pointer flex gap-2 label">
+              <label className="cursor-pointer flex gap-1 label">
                 <input
                   type="checkbox"
                   checked
@@ -57,7 +57,7 @@ export default function Page() {
                   style={{ userSelect: "none" }}
                   onCopy={(e) => e.preventDefault()}
                 >
-                 Login Guru/Admin
+                 Login sebagai Guru/Admin
                 </span>
               </label>
             </div>

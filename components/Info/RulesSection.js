@@ -1,7 +1,7 @@
 import { ArrowLeftCircleIcon } from "@heroicons/react/24/solid";
 import React, { use } from "react";
 import { FullScreen } from "react-full-screen";
-import StartModal from "../Modal.js/StartModal";
+import StartModal from "../Modal/StartModal";
 import Rules from "./Rules";
 
 function RulesSection({ fullScreen, screen2 }) {
