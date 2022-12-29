@@ -1,10 +1,10 @@
 import { ArrowLeftCircleIcon } from "@heroicons/react/24/solid";
 import React, { use } from "react";
-import { FullScreen} from "react-full-screen";
+import { FullScreen } from "react-full-screen";
+import StartModal from "../Modal.js/StartModal";
 import Rules from "./Rules";
 
-function RulesSection({fullScreen}) {
-
+function RulesSection({ fullScreen, screen2 }) {
   return (
     <FullScreen
       handle={fullScreen}
@@ -51,6 +51,8 @@ function RulesSection({fullScreen}) {
             nobis. Quae facere unde culpa ipsam nobis inventore velit,
             accusantium vel distinctio doloribus.
           </Rules>
+
+          {fullScreen.active && <StartModal fullScreen={screen2} />}
         </section>
       </section>
     </FullScreen>

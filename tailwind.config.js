@@ -11,10 +11,10 @@ module.exports = {
         "pallete-red": "#DC3535",
         "pallete-purple": "#B01E68",
       },
-      fontFamily:{
-        "satoshi": ["Satoshi","sans-serif"]
-      }
+      fontFamily: {
+        satoshi: ["Satoshi", "sans-serif"],
+      },
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 };

@@ -42,22 +42,23 @@ export default function Page() {
           </div>
           <div className="flex w-full items-center justify-between flex-row-reverse">
             <YellowBtn>Login</YellowBtn>
-            <div className="flex justify-center items-center gap-2">
-              <input
-                id="loginGuru"
-                type="checkbox"
-                onChange={handleChange}
-                value={loginGuru}
-                className="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-pallete-yellow checked:border-pallete-yellow focus:outline-none transition duration-200 my-1 align-top bg-no-repeat bg-center bg-contain float-left cursor-pointer"
-              />
 
-              <label
-                for="loginGuru"
-                style={{ userSelect: "none" }}
-                onCopy={(e) => e.preventDefault()}
-                className="text-xs sm:text-sm"
-              >
-                Login sebagai Guru/Admin
+            <div className="form-control">
+              <label className="cursor-pointer flex gap-2 label">
+                <input
+                  type="checkbox"
+                  checked
+                  className="checkbox checkbox-warning w-5 h-5"
+                  onChange={handleChange}
+                  value={loginGuru}
+                />
+                <span
+                  className="label-text text-xs sm:text-sm"
+                  style={{ userSelect: "none" }}
+                  onCopy={(e) => e.preventDefault()}
+                >
+                 Login Guru/Admin
+                </span>
               </label>
             </div>
           </div>
